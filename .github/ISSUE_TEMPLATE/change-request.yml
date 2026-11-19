@@ -1,0 +1,31 @@
+name: Change request
+description: Ask for a change or improvement to the website.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is the problem?
+      description: Describe what is missing or not working well, in simple words.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: How will we know it is done?
+      description: List what should be true when the change is finished.
+      placeholder: |
+        - Students can see ...
+        - Teachers can ...
+    validations:
+      required: true
+  - type: textarea
+    id: hints
+    attributes:
+      label: Ideas and suggestions
+      description: Any hints, examples or ideas to get started.
+  - type: textarea
+    id: context
+    attributes:
+      label: Limits and other context
+      description: Anything that should not change, deadlines, or related issues.

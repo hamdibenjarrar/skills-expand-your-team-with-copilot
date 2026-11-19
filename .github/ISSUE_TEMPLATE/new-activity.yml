@@ -1,0 +1,38 @@
+name: New activity
+description: Ask for a new extracurricular activity to be added to the website.
+title: "Missing Activity: "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Activity name
+      placeholder: Manga Maniacs
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A short and friendly description that students will see.
+    validations:
+      required: true
+  - type: input
+    id: schedule
+    attributes:
+      label: Schedule
+      placeholder: Tuesdays at 7pm
+    validations:
+      required: true
+  - type: input
+    id: max
+    attributes:
+      label: Maximum number of participants
+      placeholder: "15"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Other information
+      description: Anything else that helps, like the teacher in charge or the room.
